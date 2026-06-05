@@ -25,6 +25,11 @@
         .hero { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6OTQzOTQ2MDQ2MjAwOTI2NTM4/original/3c71a34c-3877-410c-8316-5a537d0687d8.jpeg?im_w=1200') no-repeat center center/cover; height: 70vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; padding: 0 20px; }
         .hero-content h1 { font-size: 2.8rem; margin-bottom: 20px; font-weight: 700; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
         .hero-content p { font-size: 1.3rem; margin-bottom: 30px; text-shadow: 0 2px 8px rgba(0,0,0,0.5); }
+        .availability { padding: 80px 0; background-color: #f7f5f0; }
+        .calendar-wrapper { display: flex; justify-content: center; margin-top: 10px; }
+        .calendar-clip { overflow: hidden; width: 800px; max-width: 100%; height: 520px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .calendar-clip iframe { border-radius: 12px; width: 800px; height: 600px; max-width: 100%; margin-bottom: -80px; }
+        .calendar-note { text-align: center; margin-top: 16px; font-size: 0.88rem; color: #aaa; }
         .concept { padding: 80px 0; text-align: center; background-color: #fff; }
         .concept p { max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: #555; text-align: left; }
         .features { padding: 80px 0; background-color: #f7f5f0; }
@@ -32,12 +37,6 @@
         .feature-card { background-color: #fff; padding: 40px 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.03); text-align: center; }
         .feature-card h3 { font-size: 1.3rem; margin-bottom: 15px; color: #222; }
         .feature-card p { font-size: 0.95rem; color: #666; text-align: left; }
-        /* Calendar Section */
-        .availability { padding: 80px 0; background-color: #f7f5f0; }
-        .calendar-wrapper { display: flex; justify-content: center; margin-top: 10px; }
-        .calendar-clip { overflow: hidden; width: 800px; max-width: 100%; height: 520px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
-        .calendar-clip iframe { border-radius: 12px; width: 800px; height: 600px; max-width: 100%; margin-bottom: -80px; }
-        .calendar-note { text-align: center; margin-top: 16px; font-size: 0.88rem; color: #aaa; }
         .rooms { padding: 80px 0; background-color: #fff; }
         .room-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 30px; }
         .room-card { border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
@@ -96,8 +95,8 @@
         <div class="logo">ZEROの家</div>
         <div class="nav-wrapper">
             <ul class="nav-links">
+                <li><a href="#availability">直接予約</a></li>
                 <li><a href="#concept">特徴</a></li>
-                <li><a href="#availability">空室カレンダー</a></li>
                 <li><a href="#rooms">お部屋</a></li>
                 <li><a href="#host">ホスト</a></li>
                 <li><a href="#info">利用案内</a></li>
@@ -111,7 +110,30 @@
     <div class="hero-content">
         <h1>東京・三鷹で暮らすように泊まる。</h1>
         <p>昔ながらの日本住宅をモダンにリノベーションした広々60㎡の一棟貸切宿</p>
-        <a href="https://www.airbnb.jp/rooms/943946046200926538" class="btn" target="_blank">Airbnbで空室状況を確認</a>
+        <a href="https://www.airbnb.jp/rooms/943946046200926538" target="_blank" style="color:#ddd; font-size:0.9rem; text-decoration:underline;">Airbnbでも予約できます</a>
+    </div>
+</section>
+
+<section id="availability" class="availability">
+    <div class="container">
+
+        <!-- 直接予約オファー -->
+        <div style="background: linear-gradient(135deg, #fff8f0, #fff0f3); border: 1.5px solid #ff385c; border-radius: 12px; padding: 28px 36px; margin-bottom: 36px; text-align: center;">
+            <div style="font-size: 1.5rem; font-weight: 700; color: #ff385c; margin-bottom: 8px;">🎉 直接予約で最大5%オフ</div>
+            <p style="font-size: 1.05rem; color: #444; margin-bottom: 16px;">当サイトからの直接予約限定で<strong>最大5%オフ</strong>のスペシャルオファーをご提供しています。<br>プラットフォーム手数料なし、ホストに直接リクエストを送れます。</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScV_m5YnXkopG2JRQQkswnv-Yknx9ksZ-sUTSwFTHvgYpPUoQ/viewform" target="_blank" class="btn" style="font-size: 1rem; padding: 12px 30px;">
+                予約リクエストを送る
+            </a>
+        </div>
+
+        <!-- カレンダー -->
+        <h2 class="section-title">空室カレンダー</h2>
+        <div class="calendar-wrapper">
+            <div class="calendar-clip">
+                <iframe src="https://calendar.google.com/calendar/embed?src=5bhrjdicp7iorg6a95767bjjmkvuto9n%40import.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <p class="calendar-note">⚠️ カレンダーの空室情報は最新でない可能性がございます。空室と表示されている日程も、確定前は保証されませんのであらかじめご了承ください。</p>
     </div>
 </section>
 
@@ -140,18 +162,6 @@
                 <p>フルキッチン、個別エアコン、洗濯機・乾燥機、高速Wi-Fiを完備。さらに敷地内には無料の駐車スペース（1台分）をご用意しているため、お車での観光やビジネス出張にも大変便利です。</p>
             </div>
         </div>
-    </div>
-</section>
-
-<section id="availability" class="availability">
-    <div class="container">
-        <h2 class="section-title">空室カレンダー</h2>
-        <div class="calendar-wrapper">
-            <div class="calendar-clip">
-                <iframe src="https://calendar.google.com/calendar/embed?src=5bhrjdicp7iorg6a95767bjjmkvuto9n%40import.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-            </div>
-        </div>
-        <p class="calendar-note">予約済みの日程が上記カレンダーに表示されます。最新の空室状況はAirbnbでご確認ください。</p>
     </div>
 </section>
 
@@ -284,7 +294,7 @@
             <tr><th>チェックアウト</th><td>11:00まで</td></tr>
             <tr><th>最大定員</th><td>8名様</td></tr>
             <tr><th>主要設備</th><td>無料駐車場（1台）、高速Wi-Fi、フルキッチン、洗濯機・乾燥機、個別空調、バスタブ、トイレ2点</td></tr>
-            <tr><th>周辺情報</th><td>コンビニ徒歩10分圏内に3ヶ所、最寄りのスーパー徒歩17分</td></tr>
+            <tr><th>周辺情報</th><td>コンビニ徒歩10分圏内に3ヶ所、最寄りスーパー徒歩17分</td></tr>
             <tr><th>特記事項</th><td>当施設に管理人は常駐しておりません。ご予約者様以外の無断宿泊は固く禁止しております。</td></tr>
         </table>
     </div>
@@ -292,10 +302,11 @@
 
 <section class="cta-section">
     <div class="container">
-        <h2>ご予約・空室状況のご確認</h2>
-        <p>完全貸切プライベートでお楽しみください。</p>
-        <a href="https://www.airbnb.jp/rooms/943946046200926538" class="btn" target="_blank">Airbnb公式ページで予約する</a>
+        <h2>直接予約でお得に泊まる</h2>
+        <p>完全貸切プライベートでお楽しみください。直接予約で最大5%オフ！</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScV_m5YnXkopG2JRQQkswnv-Yknx9ksZ-sUTSwFTHvgYpPUoQ/viewform" target="_blank" class="btn">予約リクエストを送る</a>
         <a href="https://airbnb.jp/h/housezeroformonthly" class="monthly-link" target="_blank">※1ヶ月以上の長期滞在用お得プランはこちら</a>
+        <a href="https://www.airbnb.jp/rooms/943946046200926538" target="_blank" style="display:block; margin-top:12px; color:#bbb; font-size:0.85rem; text-decoration:underline;">Airbnbでも予約できます</a>
     </div>
 </section>
 
