@@ -69,6 +69,12 @@
         .monthly-link { display: block; margin-top: 20px; color: #ddd; text-decoration: underline; font-size: 0.95rem; }
         .monthly-link:hover { color: #fff; }
         footer { background-color: #222; color: #888; padding: 30px 0; text-align: center; font-size: 0.85rem; }
+        /* Calendar Section */
+        .availability { padding: 80px 0; background-color: #f7f5f0; }
+        .calendar-wrapper { display: flex; justify-content: center; margin-top: 10px; }
+        .calendar-clip { overflow: hidden; width: 800px; max-width: 100%; height: 520px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .calendar-clip iframe { border-radius: 12px; width: 800px; height: 600px; max-width: 100%; margin-bottom: -80px; }
+        .calendar-note { text-align: center; margin-top: 16px; font-size: 0.88rem; color: #aaa; }
         @media (max-width: 768px) {
             .hero-content h1 { font-size: 1.8rem; }
             .hero-content p { font-size: 1rem; }
@@ -78,6 +84,8 @@
             th, td { display: block; width: 100%; }
             .section-title { font-size: 1.6rem; }
             .reviews-grid { grid-template-columns: 1fr; }
+            .calendar-clip { width: 100% !important; height: 420px !important; }
+            .calendar-clip iframe { width: 100% !important; height: 500px !important; }
         }
     </style>
 </head>
@@ -90,6 +98,7 @@
             <ul class="nav-links">
                 <li><a href="#concept">Features</a></li>
                 <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#availability">Availability</a></li>
                 <li><a href="#host">Host</a></li>
                 <li><a href="#info">Info</a></li>
             </ul>
@@ -119,7 +128,7 @@
         <h2 class="section-title">Why Stay Here</h2>
         <div class="features-grid">
             <div class="feature-card">
-                <h3>① Walking Distance to ICU, ASIJ & More</h3>
+                <h3>① Walking Distance to ICU, ASIJ &amp; More</h3>
                 <p>Conveniently close to Tokyo University of Foreign Studies, ICU (International Christian University), and ASIJ (American School in Japan). Also ideal for attending events at Ajinomoto Stadium.</p>
             </div>
             <div class="feature-card">
@@ -131,6 +140,18 @@
                 <p>Full kitchen, individual A/C units, washer/dryer, and high-speed Wi-Fi. One free parking space on the property makes it perfect for road trips or business travel.</p>
             </div>
         </div>
+    </div>
+</section>
+
+<section id="availability" class="availability">
+    <div class="container">
+        <h2 class="section-title">Availability Calendar</h2>
+        <div class="calendar-wrapper">
+            <div class="calendar-clip">
+                <iframe src="https://calendar.google.com/calendar/embed?src=5bhrjdicp7iorg6a95767bjjmkvuto9n%40import.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+        <p class="calendar-note">Booked dates are shown above. For the latest availability, please check on Airbnb.</p>
     </div>
 </section>
 
@@ -164,7 +185,6 @@
     </div>
 </section>
 
-<!-- Guest Reviews -->
 <section id="reviews" class="reviews">
     <div class="container">
         <h2 class="section-title">Guest Reviews</h2>
@@ -174,7 +194,6 @@
             <div class="score-label">Overall Rating · All Reviews</div>
         </div>
         <div class="reviews-grid">
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="reviewer-avatar">★</div>
@@ -187,7 +206,6 @@
                 <p class="review-text">From the moment we arrived, Ray made us feel welcomed and ensured that we had everything we needed. The living space spaciously accommodated our family of five. Ray was always available to answer any questions and came by to help with household issues right away. We would highly recommend renting from him to anyone visiting Tokyo!</p>
                 <div class="review-date">August 2025</div>
             </div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="reviewer-avatar">★</div>
@@ -200,7 +218,6 @@
                 <p class="review-text">Coming for our second stay felt like coming home. Ray's communication and response to questions is always prompt and thorough. The location is ideal as our daughter attends ICU which is a short walk away. We love staying in a residential area with easy access to public transportation. Looking forward to our next visit!</p>
                 <div class="review-date">December 2025</div>
             </div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="reviewer-avatar">★</div>
@@ -213,7 +230,6 @@
                 <p class="review-text">Travelling with a one-year-old for the first time, I was nervous — but Ray communicated attentively from before check-in and helped carry the stroller on arrival. A baby cot, wipes, and even Ghibli plush toys were all prepared for us. My son played happily the whole stay. A wonderful space we'd love to return to!</p>
                 <div class="review-date">March 2025</div>
             </div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="reviewer-avatar">★</div>
@@ -226,7 +242,6 @@
                 <p class="review-text">The listing is lovely, and the surrounding area is calm and serene. It includes all the essential amenities for those who want to cook their own meals. I especially loved the tatami room downstairs. The space perfectly blends modern aesthetics with traditional Japanese elements.</p>
                 <div class="review-date">March 2025</div>
             </div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="reviewer-avatar">★</div>
@@ -239,7 +254,6 @@
                 <p class="review-text">I stayed at House Zero for three weeks with my husband and 16-month-old son. The house is very clean, spacious and equipped with everything we needed — we did not need to bring much. The projector is amazing. With a minimum of possessions we were able to live like at home, cooking, travelling, and relaxing every day. The owners are extremely attentive and reliable. Thank you so much!</p>
                 <div class="review-date">September 2024</div>
             </div>
-
             <div class="review-card">
                 <div class="review-header">
                     <div class="reviewer-avatar">★</div>
@@ -252,12 +266,10 @@
                 <p class="review-text">We stayed here for three weeks while my son attended ASIJ for their summer program. I could not feel more blessed to have found this gem. The house, including all amenities, was such that I felt we were at a home away from home. The host was incredibly communicative and helpful at all times. I've stayed at many Airbnbs and this was an unforgettable, top-notch experience. 150% recommend!</p>
                 <div class="review-date">June 2024</div>
             </div>
-
         </div>
     </div>
 </section>
 
-<!-- Host -->
 <section id="host" class="host">
     <div class="container">
         <h2 class="section-title">Meet Your Host</h2>
@@ -273,7 +285,6 @@
     </div>
 </section>
 
-<!-- House Info -->
 <section id="info" class="info-table">
     <div class="container">
         <h2 class="section-title">House Info &amp; Rules</h2>
